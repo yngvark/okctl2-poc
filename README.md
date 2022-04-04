@@ -154,5 +154,3 @@ $ echo $AWS_PROFILE # Denne blir automatisk satt
 AWSAdministratorAccess-123456789012
 ```
 
-Man kan også utvide scriptet med å detektere at `aws configure sso` ikke er kjørt, og kjøre dette for brukeren eller guide hen igjennom det.
-
