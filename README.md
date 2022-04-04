@@ -107,7 +107,7 @@ ok version
 
 Putter dette her for å beskrive hvordan man forholdsvis enkelt kunne forbedret UX for login med AWS SSO.
 
-Manuelt:
+### Manuelt / Før-situasjon
 
 ```sh
 $ aws sso login
@@ -124,7 +124,10 @@ $ aws s3 ls
 2021-01-06 11:20:26 my-bucket
 ```
 
-Med hjelpescript: [okctl-sso-login.sh](okctl-sso-login.sh)
+#### Med hjelpescript / Forbedret situasjon
+
+[okctl-sso-login.sh](okctl-sso-login.sh)
+
 * Kan gjøres greit i Bash (enn så lenge), trenger ikke Go.
     * Tanken er at `okctl` bare kaller Bash-scriptet og forwarder argumenter.
 * Setter opp miljøvariabel, så brukeren slipper å kjøre `export AWS_PROFILE=...`
