@@ -140,16 +140,6 @@ Bruker får opp en dropdown liste, hvor hen velger miljøet en ønsker å logge 
 ![](/sso-login-fzf.png)
 
 ```sh
-$ . okctl sso login
-
->
-  3/3
-  default
-  AWSAdministratorAccess-321564987123
-  AWSAdministratorAccess-123456789012
-
-# Brukeren velger konto i drop down over (bruker verktøyet fzf)
-
 You are now logged in with AWS_PROFILE=AWSAdministratorAccess-123456789012
 Test it out with: aws s3 ls
 
