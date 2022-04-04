@@ -24,7 +24,8 @@
   at noen skjuler essensielle ting for meg, om det er Kubernetes manifester, Terraform eller Pulumi. Dette er ting man blir
   nødt å forstå uansett når problemer oppstår.
 - Go kan være overkill og slitsomt for enkle scripts, det hadde vært fint om vi kunne bruke Bash der det ga mening, og Go for alt
-  utover det. Hvis Okctl kunne forwardet til enkle Bash scripts er det også lettere for andre utviklere å bidra.
+  utover det. Hvis Okctl kunne forwardet til enkle Bash scripts er det også lettere for andre utviklere å bidra. (Implementasjon: Okctl kan feks klone et bash-scripts repo. `okctl somecommand` kan forwarde til `scriptsrepo/somecommand`.)
+  
 
 ## Implementasjon alternativ 1
 
