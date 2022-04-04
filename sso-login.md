@@ -40,7 +40,7 @@ $ . okctl sso login
 
 Bruker får opp:
 
-[](sso-login-fzf.png)
+![](sso-login-fzf.png)
 
 ```sh
 # ok detekterer at `aws configure sso` ikke er kjørt. Brukeren får tips om hvordan man logger inn
