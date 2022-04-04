@@ -38,7 +38,7 @@
 
 ```shell
 # Logge inn til miljø, alternativ 1:
-. okctl sso login # Se forslag til implementasjon i Appendix lengre ned
+. okctl sso login # Se forslag til implementasjon i sso-login.md
 
 # Logge inn til miljø, alternativ 2:
 . okctl venv -c env-dev.yaml # 
@@ -61,7 +61,8 @@ okctl completion
 okctl version
 ```
 
-* `okctl venv` kan beholdes, men skrives om til å bruke `source okctl venv`, se forslag i https://trello.com/c/MMGaZQZa/532-okctl-venv-sets-wrong-awsprofile.
+* `okctl venv` kan beholdes, men skrives om til å bruke `source okctl venv`, se forslag i
+  * https://trello.com/c/MMGaZQZa/532-okctl-venv-sets-wrong-awsprofile.
 
 ### Detaljer
 
