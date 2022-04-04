@@ -133,11 +133,9 @@ $ aws s3 ls
 Med hjelpescript: [okctl-sso-login.sh](okctl-sso-login.sh)
 * Kan gjøres greit i Bash (enn så lenge), trenger ikke Go.
     * Tanken er at `okctl` bare kaller Bash-scriptet og forwarder argumenter.
-* Guider brukeren til hvordan logge inn
 * Setter opp miljøvariabel, så brukeren slipper å kjøre `export AWS_PROFILE=...`
 
-Tenkt bruksmønster (PS: [okctl-sso-login.sh](okctl-sso-login.sh) gjør ikke alt det som skjer under, scriptet er kun en
-mininmal versjon jeg bruker selv):
+Tenkt bruksmønster (PS: [okctl-sso-login.sh](okctl-sso-login.sh) gjør ikke nøyaktig det som skjer under, litt annen tekst bl.a.):
 
 ```sh
 $ . okctl sso login
@@ -148,16 +146,6 @@ Bruker får opp en dropdown liste, hvor hen velger miljøet en ønsker å logge 
 ![](/sso-login-fzf.png)
 
 ```sh
-# ok detekterer at `aws configure sso` ikke er kjørt. Brukeren får tips om hvordan man logger inn
-To setup AWS environment, run:
-aws configure sso
-
-From now on you can run
-. okctl sso login
-
-$ aws configure sso
-
-# Fra nå av kan brukeren kun kjøre denne kommandoen for å logge inn.
 $ . okctl sso login
 
 >
@@ -178,3 +166,6 @@ $ aws s3 ls
 $ echo $AWS_PROFILE # Denne blir automatisk satt
 AWSAdministratorAccess-123456789012
 ```
+
+Man kan også utvide scriptet med å detektere at `aws configure sso` ikke er kjørt, og kjøre dette for brukeren eller guide hen igjennom det.
+
