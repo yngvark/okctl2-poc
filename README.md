@@ -113,12 +113,6 @@ Manuelt:
 $ aws sso login
 Missing the following required SSO configuration values: sso_start_url, sso_region, sso_role_name, sso_account_id. To make sure this profile is properly configured to use SSO, please run: aws configure sso
 
-# Bruker skjønner nada. Finner til slutt ut av hva som må gjøres.
-
-$ aws configure sso
-
-...
-
 $ export AWS_PROFILE=AWSAdministratorAccess-123456789012 # Gørr å skrive denne for hver nye terminal, hver dag
 
 $ aws sso login
