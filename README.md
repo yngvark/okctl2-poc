@@ -13,7 +13,7 @@
     - Selv lager jeg hjelpescripts hele tiden i min utviklerhverdag for å forbedre DX/UX. Som applikasjonsutvikler ville jeg
       ønsket at noen (mao. Kjøremiljø) kunne lagd disse, og gjerne at jeg kunne bidratt til de selv.
 - Å ha ett CLI som Okctl er en god ide. Man kunne i prinsippet hatt et GitHub-repository som alle utviklere putta i PATH-en sin
-  (på ITAS Classic gjorde man dette), men det er enklere å oppdatere et CLI (med installasjonscript, okm, brew/apt) enn at alle
+  (på ITAS Classic gjorde man dette), men det er enklere å oppdatere et CLI (med installasjonscript, ovm, brew/apt) enn at alle
   skal kjøre git pull hele tiden.
 - Okctl skal spille på lag med eksisterende verktøy som finnes der ute (aws cli, terraform, pulumi, alskens verktøy fra 
   internett). Okctl skal ikke være en hindring, eller være et begrensende abstraksjonslag. Okctl skal likevel kunne gjøre
