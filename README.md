@@ -1,4 +1,4 @@
-# okctl v2
+# okctl iterasjon 2
 
 ## Løsningsforslag
 
