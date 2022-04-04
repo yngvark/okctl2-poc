@@ -11,7 +11,7 @@
 
 - Hjelpescripts i hverdagen er en nødvendighet, og noe vi ønsker å beholde fra Okctl.
     - Selv lager jeg hjelpescripts hele tiden i min utviklerhverdag for å forbedre DX/UX. Som applikasjonsutvikler ville jeg
-      ønsket at noen (mao. Kjøremiljø) kunne lagd disse.
+      ønsket at noen (mao. Kjøremiljø) kunne lagd disse, og gjerne at jeg kunne bidratt til de selv.
 - Å ha ett CLI som Okctl er en god ide. Man kunne i prinsippet hatt et GitHub-repository som alle utviklere putta i PATH-en sin
   (på ITAS Classic gjorde man dette), men det er enklere å oppdatere et CLI (med installasjonscript, okm, brew/apt) enn at alle
   skal kjøre git pull hele tiden.
@@ -24,7 +24,7 @@
   at noen skjuler essensielle ting for meg, om det er Kubernetes manifester, Terraform eller Pulumi. Dette er ting man blir
   nødt å forstå uansett når problemer oppstår.
 - Go kan være overkill og slitsomt for enkle scripts, det hadde vært fint om vi kunne bruke Bash der det ga mening, og Go for alt
-  utover det.
+  utover det. Hvis Okctl kunne forwardet til enkle Bash scripts er det også lettere for andre utviklere å bidra.
 
 ## Implementasjon alternativ 1
 
