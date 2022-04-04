@@ -143,9 +143,9 @@ mininmal versjon jeg bruker selv):
 $ . okctl sso login
 ```
 
-Bruker får opp:
+Bruker får opp en dropdown liste, hvor hen velger miljøet en ønsker å logge inn i:
 
-[](sso-login-fzf.png)
+![](/sso-login-fzf.png)
 
 ```sh
 # ok detekterer at `aws configure sso` ikke er kjørt. Brukeren får tips om hvordan man logger inn
