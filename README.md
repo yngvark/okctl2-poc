@@ -5,7 +5,7 @@
 * Alternativ 1: Implementere alternativ 2 inn i Okctl.
   * På sikt fase ut apply / delete cluster (for EKS).
 * Alternativ 2: Lage nytt CLI (`ok`?) som produserer Terraform / Pulumi hvor brukeren selv kjører `tf apply` / `pl up`.
-  * På sikt fase ut Okctl.
+  * På sikt fase ut `okctl`.
 
 ## Prinsipper / Tanker for et CLI-verktøy
 
