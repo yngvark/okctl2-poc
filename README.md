@@ -29,6 +29,23 @@
 
 ## Implementasjon alternativ 1
 
+Nytt verktøy, feks `ok`.
+
+```shell
+. ok sso login
+# eller
+. ok venv -c env-dev.yaml
+
+ok ecs scaffold cluster
+ok ecs scaffold service
+ok lambda scaffold
+
+ok completion
+ok version
+```
+
+## Implementasjon alternativ 2
+
 * Dagens EKS-spesifikke kommandoer flyttes til `okctl eks`, så f.eks `okctl eks apply cluster`
 * Ikke nødvendig, men foreslår en mer feature basert oppdeling av kommandoer, slik som `aws` CLI-et gjør det (`aws s3 ls`). Eks:
   `okctl ecs scaffold cluster` framfor `okctl scaffold ecs cluster`. `okctl upgrade` gir feks ikke mening for lambda (ok, kanskje,
@@ -85,20 +102,3 @@ pl up
     
 Kommandoen laster ned github.com/oslokommune/okctl/pulumi/ecs/cluster, som er -bruk- av en ecs komponent (tilsvarer TF modul),
 ikke selve komponenten. I Pulumi gjør man det med package.json, i Terraform bruker referer man til en modul med versjon i GitHub.
-
-## Implementasjon alternativ 2
-
-Nytt verktøy, feks `ok`.
-
-```shell
-. ok sso login
-# eller
-. ok venv -c env-dev.yaml
-
-ok ecs scaffold cluster
-ok ecs scaffold service
-ok lambda scaffold
-
-ok completion
-ok version
-```
