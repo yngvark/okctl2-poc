@@ -12,9 +12,19 @@
 - Hjelpescripts i hverdagen er en nødvendighet, og noe vi ønsker å beholde fra Okctl.
     - Selv lager jeg hjelpescripts hele tiden i min utviklerhverdag for å forbedre DX/UX. Som applikasjonsutvikler ville jeg
       ønsket at noen (mao. Kjøremiljø) kunne lagd disse, og gjerne at jeg kunne bidratt til de selv.
-- Å ha ett CLI som Okctl er en god ide. Man kunne i prinsippet hatt et GitHub-repository som alle utviklere putta i PATH-en sin
-  (på ITAS Classic gjorde man dette), men det er enklere å oppdatere et CLI (med installasjonscript, ovm, brew/apt) enn at alle
+- Å ha ett CLI som Okctl er en god ide. Man kunne i prinsippet hatt et GitHub-repository som alle utviklere putta i PATH-en sin, men det er enklere å oppdatere et CLI (med installasjonscript, ovm, brew/apt) enn at alle
   skal kjøre git pull hele tiden.
+  - På ITAS Classic gjorde man dette. Eksempler:
+
+```sh
+i itas deploy # Deploye applikasjon
+i github add-member # Legge til bruker
+i f5 # Gjøre operasjoner i BIGIP
+i security edit-secret # Redigere secret
+```
+
+NB! Poenget her er å samle script i ett verktøy (`i`), ikke selve kommandoene.
+
 - Okctl skal spille på lag med eksisterende verktøy som finnes der ute (aws cli, terraform, pulumi, alskens verktøy fra 
   internett). Okctl skal ikke være en hindring, eller være et begrensende abstraksjonslag. Okctl skal likevel kunne gjøre
   opplevelsen og sammensyingen av disse verktøyene bedre. Hvis Okctl tryner, skal det fortsatt være mulig å gjøre ting manuelt.
