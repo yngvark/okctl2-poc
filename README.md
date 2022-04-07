@@ -66,27 +66,15 @@ ok version
 
 ```shell
 # Logge inn til miljø, alternativ 1:
-. okctl sso login # Se forslag til implementasjon i sso-login.md
+. ok sso login # Se forslag til implementasjon i sso-login.md
 
 # Logge inn til miljø, alternativ 2:
-. okctl venv -c env-dev.yaml # 
-. okctl venv -c env-dev.yaml --terminal fish
+. ok venv -c env-dev.yaml # 
+. ok venv -c env-dev.yaml --terminal fish
 
-okctl ecs scaffold cluster
-okctl ecs scaffold service
-okctl lambda scaffold
-
-# Eksisterende EKS-spesifikke kommandoer flyttes til okctl eks:
-okctl eks apply cluster ...
-okctl eks delete cluster ...
-
-okctl eks apply application ...
-okctl eks upgrade
-okctl eks forward
-
-# Eksisterende generelle kommandoer beholdes
-okctl completion
-okctl version
+ok ecs scaffold cluster
+ok ecs scaffold service
+ok lambda scaffold
 ```
 
 * `okctl venv` kan beholdes, men skrives om til å bruke `source okctl venv`, se forslag i
@@ -117,3 +105,20 @@ pl up
   `okctl ecs scaffold cluster` framfor `okctl scaffold ecs cluster`. `okctl upgrade` gir feks ikke mening for lambda (ok, kanskje,
   men poenget er at ikke alle actions passer til alle ressurser), så derfor burde det være
   `okctl eks upgrade`.
+  
+Eksempelkommandoer:
+
+```sh
+
+# Eksisterende EKS-spesifikke kommandoer flyttes til okctl eks:
+okctl eks apply cluster ...
+okctl eks delete cluster ...
+
+okctl eks apply application ...
+okctl eks upgrade
+okctl eks forward
+
+# Eksisterende generelle kommandoer beholdes
+okctl completion
+okctl version
+```
