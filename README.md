@@ -109,6 +109,7 @@ pl up
 Eksempelkommandoer:
 
 ```sh
+okctl ecs scaffold cluster
 
 # Eksisterende EKS-spesifikke kommandoer flyttes til okctl eks:
 okctl eks apply cluster ...
