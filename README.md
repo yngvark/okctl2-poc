@@ -39,6 +39,28 @@ NB! Poenget her er å samle script i ett verktøy (`i`), ikke selve kommandoene.
   utover det. Hvis Okctl kunne forwardet til enkle Bash scripts er det også lettere for andre utviklere å bidra. (Implementasjon: Okctl kan feks klone et bash-scripts repo. `okctl somecommand` kan forwarde til `scriptsrepo/somecommand`.) Men tygg litt på denne, vi ønsker _ikke_ kompliserte scripts, da er Go og typede språk bedre.
   
 
+### Detaljer
+
+```shell
+$ okctl ecs scaffold cluster
+
+Gennerating Pulumi...
+
+Fire up your new component by running:
+
+cd remote_state
+pl preview
+pl up
+
+cd ecs
+pl preview
+pl up
+```
+    
+Kommandoen laster ned github.com/oslokommune/okctl/pulumi/ecs/cluster, som er -bruk- av en ecs komponent (tilsvarer TF modul),
+ikke selve komponenten. I Pulumi gjør man det med package.json, i Terraform bruker referer man til en modul med versjon i GitHub.
+
+
 ## Implementasjon alternativ 1
 
 Nytt verktøy, feks `ok`.
@@ -85,27 +107,6 @@ okctl version
 
 * `okctl venv` kan beholdes, men skrives om til å bruke `source okctl venv`, se forslag i
   * https://trello.com/c/MMGaZQZa/532-okctl-venv-sets-wrong-awsprofile.
-
-### Detaljer
-
-```shell
-$ okctl ecs scaffold cluster
-
-Gennerating Pulumi...
-
-Fire up your new component by running:
-
-cd remote_state
-pl preview
-pl up
-
-cd ecs
-pl preview
-pl up
-```
-    
-Kommandoen laster ned github.com/oslokommune/okctl/pulumi/ecs/cluster, som er -bruk- av en ecs komponent (tilsvarer TF modul),
-ikke selve komponenten. I Pulumi gjør man det med package.json, i Terraform bruker referer man til en modul med versjon i GitHub.
 
 ## Implementasjon alternativ 2
 
