@@ -66,11 +66,11 @@ ok version
 
 ```shell
 # Logge inn til miljø, alternativ 1:
-. ok sso login # Se forslag til implementasjon i sso-login.md
+. <(ok sso login) # Se forslag til implementasjon i sso-login.md
 
 # Logge inn til miljø, alternativ 2:
-. ok venv -c env-dev.yaml # 
-. ok venv -c env-dev.yaml --terminal fish
+. <(ok venv -c env-dev.yaml) # 
+. <(ok venv -c env-dev.yaml --terminal fish)
 
 ok ecs scaffold cluster
 ok ecs scaffold service
