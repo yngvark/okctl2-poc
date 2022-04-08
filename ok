@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+if [[ $1 == "venv" ]]; then
+    echo export TF_VAR_something=
+fi
+
+if [[ $1 == "init" ]]; then
+    echo Some init
+fi
+
+
+if [[ $1 == "sso" ]]; then
+    echo Some SSO
+fi
+
+if [[ $* == "-h" || -z "$1" ]]
+then
+    ME=$(basename $0)
+    echo "USAGE:"
+    echo "$ME venv"
+    echo "$ME init"
+    echo "$ME sso"
+    echo
+    echo "-h            Show this help"
+    return 0 2> /dev/null || exit 0
+fi
