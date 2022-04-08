@@ -13,6 +13,11 @@ if [[ $1 == "sso" ]]; then
     echo Some SSO
 fi
 
+if [[ $1 == "version" ]]; then
+    echo Terraform version
+    terraform version
+fi
+
 if [[ $* == "-h" || -z "$1" ]]
 then
     ME=$(basename $0)
@@ -20,6 +25,7 @@ then
     echo "$ME venv"
     echo "$ME init"
     echo "$ME sso"
+    echo "$ME version"
     echo
     echo "-h            Show this help"
     return 0 2> /dev/null || exit 0
